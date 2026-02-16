@@ -131,26 +131,13 @@ This platform predicts mitogen-activated protein kinase 1 **(MAPK1) inhibitors**
 """)
 
 # --- Model Architecture Section ---
-with st.expander("🔍 View Model Architecture", expanded=True):
-    st.markdown("""
-    * **Base Models:** Attention, convolutional neural network (CNN), graph convolutional network (GCN), and graph neural network (GNN)-attention.
-    * **Meta Model:** Meta-attention model.
-    * **Active Learning Strategy:** Optimized during training using **entropy-based sampling** to select the most informative data points.
-    * **Features:** SMILES-based descriptors and molecular graphs.
-    """)
-
-# --- Performance Metrics ---
-st.markdown("#### Model Performance")
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.metric(label="Accuracy", value="98%")
-with col2:
-    st.metric(label="AUPRC", value="85%")
-with col3:
-    st.metric(label="MCC", value="83%")
-
-st.divider()
+st.markdown("#### Run Prediction")
+st.markdown("""
+* **Base Models:** Attention, convolutional neural network (CNN), graph convolutional network (GCN), and graph neural network (GNN)-attention.
+* **Meta Model:** Meta-attention model.
+* **Active Learning Strategy:** Optimized during training using **entropy-based sampling** to select the most informative data points.
+* **Features:** SMILES-based descriptors and molecular graphs.
+""")
 
 # --- Prediction Input (Placeholder) ---
 st.markdown("#### Run Prediction")
@@ -492,13 +479,5 @@ Darlene Nabila Zetta<sup>1</sup> and Tarapong Srisongkram<sup>2*</sup>
 
 <sup>1</sup>*Graduate School in the Program of Pharmaceutical Sciences, Faculty of Pharmaceutical Sciences, Khon Kaen University, Khon Kaen 40002, Thailand*  
 <sup>2</sup>*Division of Pharmaceutical Chemistry, Faculty of Pharmaceutical Sciences, Khon Kaen University, Khon Kaen 40002, Thailand*
-</div>
-""", unsafe_allow_html=True)
-
-
-st.markdown("""
-<div class="author">
-Main Reference:  \n
-Zetta, D.N.; Srisongkram, T. Data-efficient learning for accurate identification of MAPK1 inhibitors using an active meta-deep learning framework. **J Cheminformatics** (2026). [DOI](https://doi.org/10.1186/s13321-026-01159-9)
 </div>
 """, unsafe_allow_html=True)
