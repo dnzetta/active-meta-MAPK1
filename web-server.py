@@ -436,9 +436,9 @@ with tab1:
             # Explanation just below heatmap
             st.markdown(
                 "**Heatmap Interpretation:**  \n"
-                "\\< 0.5 → Non-toxic  \n"
+                "\\< 0.5 → Inactive  \n"
                 "= 0.5 → Uncertain  \n"
-                "\\> 0.5 → Toxic"
+                "\\> 0.5 → Active"
             )
 
 
@@ -472,9 +472,9 @@ with tab2:
         # Heatmap legend
         st.markdown(
             "**Prediction Interpretation:**  \n"
-            "\\< 0.5 → Non-toxic  \n"
+            "\\< 0.5 → Inactive  \n"
             "= 0.5 → Uncertain  \n"
-            "\\> 0.5 → Toxic"
+            "\\> 0.5 → Active"
         )
 
 
