@@ -23,13 +23,17 @@ from torch_geometric.utils import to_dense_batch
 # --- Unified Styling ---
 st.markdown("""
 <style>
-/* ===== PAGE BACKGROUND & GLOBAL TEXT ===== */
+/* ===== PAGE BACKGROUND ===== */
 .stApp {
-    background-color: #eef6fa !important;
-    color: #002244 !important;
-    font-family: 'sans-serif' !important;
+background-color: #eef6fa !important;
+font-family: 'sans-serif' !important;
 }
-
+            
+/* ===== GLOBAL TEXT ===== */
+p, span, div, label, h1, h2, h3, h4, h5 {
+    color: #002244 !important;
+}
+            
 /* ===== AUTHOR SECTION ===== */
 .author {
     background-color: #cce0ff !important;
