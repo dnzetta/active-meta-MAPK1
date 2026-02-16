@@ -8,7 +8,6 @@ from rdkit import Chem
 from rdkit.Chem import Descriptors, rdMolDescriptors
 from joblib import load
 from tensorflow.keras.models import load_model
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
