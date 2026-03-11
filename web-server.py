@@ -17,7 +17,6 @@ from torch_geometric.nn import (
     NNConv,
     global_mean_pool
 )
-
 from torch_geometric.utils import to_dense_batch
 
 # --- Unified Styling ---
